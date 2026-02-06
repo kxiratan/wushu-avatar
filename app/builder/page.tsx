@@ -78,7 +78,7 @@ export default function AvatarBuilder() {
               {hoveredWeapon === "straight" && (
                 <div className="absolute top-full left-0">
                   <p className="text-center">
-                    double-edged and straight, emphasizes grace and precision
+                    double-edged and straight, the straight sword emphasizes grace and precision
                   </p>
                 </div>
               )}
@@ -153,7 +153,7 @@ export default function AvatarBuilder() {
               {hoveredWeapon === "broad" && (
                 <div className="absolute top-full left-0">
                   <p className="text-center">
-                    single-edged and curved, focused on powerful and fast movements
+                    single-edged and curved, the broad sword is focused on powerful and fast movements
                   </p>
                 </div>
               )}
