@@ -29,40 +29,49 @@ export default function AvatarBuilder() {
         </button>
       </div>
 
-      <div className="flex-grow flex items-center justify-center max-w-7xl mx-auto h-full">
-        <img
-            src="stick-figure.png"
-            alt="stick figure"
-            className="w-auto h-[300px] hover:rotate-4" 
-        />
-        {showSilks && (
-          <>
+      <div className="flex-grow flex items-center justify-center max-w-7xl mx-auto h-full gap-8">
+        {/* Left side */}
+        <div className="flex items-center justify-end w-[200px]">
+          {showSilks && (
             <img
               src="red-and-white-silk.png"
               alt="red and white silk"
               className="w-auto h-[300px] hover:rotate-4"
             />
+          )}
+          {showWeapons && (
+            <img
+              src="straightsword.png"
+              alt="straight sword"
+              className="w-auto h-[100px] hover:rotate-4"
+            />
+          )}
+        </div>
+
+        {/* Center — stick figure */}
+        <img
+            src="stick-figure.png"
+            alt="stick figure"
+            className="w-auto h-[300px] hover:rotate-4"
+        />
+
+        {/* Right side */}
+        <div className="flex items-center justify-start w-[200px]">
+          {showSilks && (
             <img
               src="blue-and-white-silk.png"
               alt="blue and white silk"
               className="w-auto h-[300px] hover:rotate-4"
             />
-          </>
-        )}
-        {showWeapons && (
-          <>
-            <img 
-              src="straightsword.png"
-              alt="straight sword"
-              className="w-auto h-[100px] hover:rotate-4"
-            />
+          )}
+          {showWeapons && (
             <img
               src="broadsword.png"
               alt="broad sword"
               className="w-auto h-[80px] hover:rotate-4"
             />
-          </>
-        )}
+          )}
+        </div>
       </div>
 
     </main>
