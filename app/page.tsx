@@ -12,7 +12,7 @@ export default function Home() {
           build your wushu avatar
         </h1>
         <button
-          onClick={() => router.push('/builder')}
+          onClick={() => router.push('/intro')}
           className="px-10 py-10 hover:rotate-5 hover:scale-105 transition-transform text-2xl tracking-wide text-[#fdc921]"
         >
           let's go!
