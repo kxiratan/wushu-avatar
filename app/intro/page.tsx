@@ -6,6 +6,7 @@ export default function AvatarBuilder() {
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-white grid-background p-8">
+      {/* decoration images */}
       <div className="relative display:flex max-w-7xl mx-auto">
         <img
           src="/red-and-white-silk.png"
@@ -28,6 +29,7 @@ export default function AvatarBuilder() {
           className="absolute -bottom-28 -right-28 h-[120px] w-auto rotate-12 hover:-rotate-6 transition-transform"
         />
 
+        {/* wushu overview button */}
         <button
           onClick={() => router.push('/builder')}
           className="w-[450px] text-base text-black mb-6 hover:rotate-1 transition-transform cursor-pointer bg-[#e63946] rounded-2xl"

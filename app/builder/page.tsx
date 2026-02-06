@@ -16,6 +16,7 @@ export default function AvatarBuilder() {
   return (
     <main className="min-h-screen bg-white grid-background p-8 flex flex-col">
       
+      {/* top buttons */}
       <div className="flex items-center justify-center gap-8 w-full max-w-7xl mx-auto">
         <button 
           onClick={() => {
@@ -37,7 +38,7 @@ export default function AvatarBuilder() {
 
       <div className="flex-grow flex items-center justify-center max-w-7xl mx-auto h-full gap-8">
        
-       {/* Left side */}
+       {/* left side */}
         <div className="flex items-center justify-end w-[200px]">
           {showSilks && (
             <div
@@ -85,7 +86,7 @@ export default function AvatarBuilder() {
           )}
         </div>
 
-        {/* Center — stick figure */}
+        {/* middle */}
         <div className="relative flex items-center justify-center">
             <img
               src="stick-figure.png"
@@ -112,7 +113,7 @@ export default function AvatarBuilder() {
         </div>
 
 
-        {/* Right side */}
+        {/* right side */}
         <div className="flex items-center justify-start w-[200px]">
           {showSilks && (
             <div
@@ -161,6 +162,7 @@ export default function AvatarBuilder() {
         </div>
       </div>
 
+      {/* button link to performance vid */}
       {selectedSilk && selectedWeapon && (
         <div className="flex justify-center">
           <button
