@@ -165,7 +165,12 @@ export default function AvatarBuilder() {
         <div className="flex justify-center">
           <button
             onClick={() => {
-
+              if (selectedWeapon === "straightsword.png") {
+                window.open("https://www.youtube.com/watch?v=46K8_vHfsXE", "_blank")
+              }
+              if (selectedWeapon === "broadsword.png") {
+                window.open("https://www.youtube.com/watch?v=ACSxPTgmPBA", "_blank")
+              }
             }}
             className="px-14 py-2 text-xl hover:rotate-3 transition-transform cursor-pointer bg-[#e63946] rounded-lg text-[#fdc921]">
             competition time!
