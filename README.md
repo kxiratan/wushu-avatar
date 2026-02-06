@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## wushu avatar builder
+wushu avatar builder is an interactive web app that allows users to create their own wushu stick figure athlete by selecting different silk uniforms and weapons. after customizing the avatar, users can watch a real wushu performance corresponding to their weapon of choice.
 
-## Getting Started
+## features
+- build custom avatar: click on silk or weapon options to customize your stick figure
+- hover descriptions: get detailed descriptions of wushu elements by hovering over silk and weapon options
+- final competition button links to corresponding youtube performance after user has customized their avatar
 
-First, run the development server:
+## tech stack
+- frontend: next.js, react, typescript
+- styling: tailwind css
+- assets: png images for stick figure, silks, weapons
+- version control: git
 
-```bash
+## getting started
+1. clone the repository
+```
+git clone https://github.com/kxiratan/wushu-avatar.git
+cd wushu-avatar
+```
+2. install dependencies
+```
+npm install
+```
+3. run development server
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+4. open http://localhost:3000 in your browser
+
+## how to use
+1. on home page, click on wushu description to start the avatar builder
+2. on the builder page, click on silk or weapon buttons to toggle between options
+3. hover over options to see descriptions, click on options to customize avatar
+4. once a silk and weapon are selected, click "competition time!" button to watch a real wushu performance corresponding to your selected weapon
+
+## project structure
+```
+wushu-avatar/
+├── app/
+│   ├── builder/
+│   │   └── page.tsx          # avatar builder page with silk/weapon selection
+│   ├── intro/
+│   │   └── page.tsx          # intro page with wushu description
+│   ├── globals.css           # global styles and grid background
+│   ├── layout.tsx            # root layout
+│   └── page.tsx              # home/landing page
+├── public/
+│   ├── blue-and-white-silk.png
+│   ├── broadsword.png
+│   ├── red-and-white-silk.png
+│   ├── stick-figure.png
+│   └── straightsword.png
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## future improvements
+- add more customization options (hair, long weapons, northern/southern style, etc.)
+- animate customized avatar
+- option to save and create multiple avatars
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## author
+keira tan
+- github: https://github.com/kxiratan
+- email: keira.tan@berkeley.edu
